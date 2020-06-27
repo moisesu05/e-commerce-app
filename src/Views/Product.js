@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import Loader from '../Components/Loader'
+import { useAxiosGet } from '../Hooks/HttpRequest'
 
 function Product(){
     const {id} = useParams() 
@@ -25,9 +26,7 @@ function Product(){
     if(product.data){
         content =
             <div>
-                <h1 className='font-bold text-2xl mb-3'>
-                    Product
-                </h1>
+                
                 <h1 className='font-bold text-1xl mb-3'>
                 {product.data.name} 
                 </h1>
@@ -47,6 +46,9 @@ function Product(){
     }
     return(
         <div>
+            <h1 className='font-bold text-2xl mb-3'>
+                Products
+            </h1>
             {content}
         </div>
     )
