@@ -1,4 +1,4 @@
-# E-commerce App
+# E-commerce App (WIP)
 Created using **ReactJS**</br>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
